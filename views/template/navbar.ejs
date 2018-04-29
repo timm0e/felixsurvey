@@ -1,0 +1,17 @@
+<% let links = [{name: 'Home', link: '/'}, {name: 'My Surveys', link: '/surveys'}, {name: 'Users', link: '/usercp'},] %>
+
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a href="/.." class="navbar-brand">Felix's Super Survey
+    <i class="fas fa-american-sign-language-interpreting"></i>
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <% for (link of links) { %>
+                <li class="navbar-item"><a href="<%- link.link %>" class="nav-link <%- (((typeof active) !== "undefined") && active === link.link) ? "active" : "" %>"><%= link.name %></a></li> 
+            <% } %>
+        </ul>
+    </div>
+</nav>

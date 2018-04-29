@@ -1,0 +1,19 @@
+<%- include("template/header", {title: "Surveys"}) %>
+<%- include("template/navbar", {active:'/surveys'})%>
+<br>
+
+<%- include("surveys/snippets/nav") %>
+
+<br>
+
+<div class="container" id="main">
+    <ul.list-group>
+        <% for (let i = 0; i<100; i++) {%>
+        <%- include("surveys/snippets/survey-elem", {title:"Umfrage "+i, department:"Abteilung "+i}) %>
+        <% } %>
+        </ul>
+</div>
+
+
+
+<%- include("template/footer") %>

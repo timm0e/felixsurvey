@@ -1,0 +1,31 @@
+{
+    "path-autocomplete.pathMappings": {
+        "/": "${workspace}/public"
+    },
+    "typescript.quickSuggestionsForPaths": false,
+    "emmet.includeLanguages": {
+        "ejs": "html"
+    },
+    "beautify.language": {
+        "js": {
+            "type": [
+                "javascript",
+                "json"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautify"
+            ]
+        },
+        "css": [
+            "css",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html",
+            "ejs"
+        ]
+    },
+    
+}

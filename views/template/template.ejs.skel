@@ -1,0 +1,6 @@
+<%- include("header", {title: "Hello World"}) %>
+<%- include("navbar")%>
+
+<%# Content here %>
+
+<%- include("footer") %>
