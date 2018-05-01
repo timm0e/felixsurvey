@@ -1,0 +1,17 @@
+#main,
+#question-card {
+    margin-top: 1em;
+}
+
+#buttons {
+    margin: 1em;
+}
+
+#categories-nav>li {
+    width: 10em;
+    text-align: center;
+}
+
+#categories-nav>li.nav-item>a.nav-link>div.progress {
+    height: .5em;
+}

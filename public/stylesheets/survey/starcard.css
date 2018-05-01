@@ -1,0 +1,35 @@
+#stars>div.form-check.form-check-inline {
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+#stars {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.card-title,
+.card-text {
+    text-align: center;
+}
+
+.fa-star {
+    font-size: 2em;
+}
+
+input {
+    margin: 0px !important;
+}
+
+.fa-star {
+    font-weight: 400;
+}
+
+.fa-star:hover,
+.filledstar {
+    font-weight: 900 !important;
+}
+
+input:checked+label>.fa-star {
+    font-weight: 900;
+}
