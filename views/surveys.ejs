@@ -10,7 +10,7 @@
 <div class="container" id="main">
     <ul class="list-group">
         <% for (let i = 0; i<100; i++) {%>
-        <%- include("surveys/snippets/survey-elem", {title:"Umfrage "+i, department:"Abteilung "+i}) %>
+        <%- include("surveys/snippets/survey-elem", {title:"Umfrage "+i, department:"Abteilung "+i, date:"22.11.2018", id: i}) %>
         <% } %>
     </ul>
 </div>
