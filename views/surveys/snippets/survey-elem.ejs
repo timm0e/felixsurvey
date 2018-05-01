@@ -1,12 +1,9 @@
 <%# parms: 'title' %>
+<%# include survey/survey-elem.css when using %>
 <li class="list-group-item list-group-item-action justify-content-between align-items-center d-flex">
-    <div>
-        <b><%= title %></b>
+    <b><%= title %></b>
 
-        <i class="text-secondary">02.11.2018</i>
-    </div>
-    <div>
-        <i class="text-secondary" style="margin-right: 1em"><%= department %></i>
-        <i class="fas fa-angle-right"></i>
-    </div>
+    <i class="text-secondary mr-auto date">02.11.2018</i>
+    <i class="text-secondary ml-auto department"><%= department %></i>
+    <i class="fas fa-angle-right"></i>
 </li>
