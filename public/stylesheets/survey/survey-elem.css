@@ -5,3 +5,11 @@
 .department {
   margin-right: 10px;
 }
+
+.survey-title {
+  min-width: 100px;
+}
+
+.type-container {
+  margin-left: 2em;
+}
