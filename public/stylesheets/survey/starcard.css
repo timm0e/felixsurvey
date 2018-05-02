@@ -6,6 +6,7 @@
 #stars {
     text-align: center;
     margin-top: 2em;
+    width: fit-content;
 }
 
 .card-title,
