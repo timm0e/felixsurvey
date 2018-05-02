@@ -1,9 +1,16 @@
+<%# Params: 'title' 'description' %>
 <link rel="stylesheet" href="/stylesheets/survey/starcard.css">
 <script src="/javascripts/survey/stars.js"></script>
 <div class="card" id="question-card">
     <div class="card-body">
-        <h2 class="card-title">Frage</h2>
-        <p class="card-text text-secondary">Testbeschreibung beste</p>
+        <h2 class="card-title">
+            <%= title %>
+        </h2>
+        <% if (typeof(description) !== 'undefined') { %>
+        <p class="card-text text-secondary">
+            <%= description %>
+        </p>
+        <% } %>
 
         <form id="stars" class="ml-auto mr-auto">
             <div class="form-check form-check-inline">
