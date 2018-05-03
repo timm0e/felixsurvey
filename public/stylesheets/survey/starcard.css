@@ -1,36 +1,36 @@
-#stars>div.form-check.form-check-inline {
-    margin-right: 6px;
-    margin-left: 6px;
+#stars > div.form-check.form-check-inline {
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
 #stars {
-    text-align: center;
-    margin-top: 2em;
-    width: fit-content;
+  text-align: center;
+  margin-top: 2em;
+  width: fit-content;
 }
 
 .card-title,
 .card-text {
-    text-align: center;
+  text-align: center;
 }
 
 .fa-star {
-    font-size: 2em;
+  font-size: 5.5vw;
 }
 
 input {
-    margin: 0px !important;
+  margin: 0px !important;
 }
 
 .fa-star {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .fa-star:hover,
 .filledstar {
-    font-weight: 900 !important;
+  font-weight: 900 !important;
 }
 
-input:checked+label>.fa-star {
-    font-weight: 900;
+input:checked + label > .fa-star {
+  font-weight: 900;
 }
