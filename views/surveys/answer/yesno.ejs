@@ -1,0 +1,33 @@
+<%# Params: 'title', ?'description' %>
+<link rel="stylesheet" href="/stylesheets/survey/yesno.css">
+<div class="card" id="question-card">
+    <div class="card-body">
+        <h2 class="card-title">
+            <%= title %>
+        </h2>
+        <% if (typeof(description) !== 'undefined') { %>
+        <p class="card-text text-secondary">
+            <%= description %>
+        </p>
+        <% } %>
+
+        <hr>
+
+        <form id="answers" class="mr-auto ml-auto">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="answer" id="no" value="no" style="display: none !important">
+                <label class="form-check-label" for="no">
+                    <i class="fas fa-times"></i>
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="answer" id="yes" value="yes" style="display: none !important">
+                <label class="form-check-label" for="yes">
+                    <i class="fas fa-check"></i>
+                </label>
+            </div>
+        </form>
+
+    </div>
+</div>
