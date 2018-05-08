@@ -6,12 +6,14 @@
 #choices {
   margin-top: 2em;
   width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
 }
 
-#choices>div>label {
-    margin-left: 1.25em;
+#choices > div > label {
+  margin-left: 1.25em;
 }
 
-#choices>div>input {
+#choices > div > input {
   margin-top: 5px !important;
 }
