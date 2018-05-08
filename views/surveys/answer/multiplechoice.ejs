@@ -1,0 +1,29 @@
+<%# Params: 'answers': Array of Strings %>
+<link rel="stylesheet" href="/stylesheets/survey/multiplechoice.css">
+<div class="card" id="question-card">
+    <div class="card-body">
+        <h2 class="card-title">
+            <%= title %>
+        </h2>
+        <% if (typeof(description) !== 'undefined') { %>
+        <p class="card-text text-secondary">
+            <%= description %>
+        </p>
+        <% } %>
+
+        <hr>
+
+        <form class="ml-auto mr-auto" id="choices">
+            <% for (let i = 0; i < answers.length; i++) { %>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="answer<%= i -%>" value="<%= i -%>">
+                <label class="form-check-label" for="answer<%= i -%>">
+                    <%= answers[i] %>
+                </label>
+            </div>
+            <% } %>
+        </form>
+        <!-- hier schicke Liste einfügen -->
+
+    </div>
+</div>

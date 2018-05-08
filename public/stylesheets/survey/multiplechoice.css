@@ -1,0 +1,17 @@
+.card-title,
+.card-text {
+  text-align: center;
+}
+
+#choices {
+  margin-top: 2em;
+  width: fit-content;
+}
+
+#choices>div>label {
+    margin-left: 1.25em;
+}
+
+#choices>div>input {
+  margin-top: 5px !important;
+}
